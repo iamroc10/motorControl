@@ -1,3 +1,8 @@
+/**
+*	@file ircs.h
+*	@brief This file contain the declaration of the functions that are common in the client.c and server.c in order to have more organizated all the project. 
+*	@author ROC BENAIGES MORAGREGA
+*/
 #ifndef _MYLIB_H_
 #define _MYLIB_H_
 
