@@ -1,7 +1,7 @@
 /**
 *	@file client.c
 *	@brief This file represents the client, i.e. the engine that must receive its position and constantly send data to the other engine (server) to move when necessary. 
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 
 #include <taskLib.h>
@@ -33,7 +33,7 @@ int motorPos;							/**< Position of the motor */
 
 /**
 *	This method creates the connection, creating a UDP socket, configuring the client adress and IP
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 void init_connection() 
 {
@@ -60,7 +60,7 @@ void init_connection()
 
 /**
 *	This method will be used to send the data (motor position) to the server adress.
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 void send_data () 
 {
@@ -79,7 +79,7 @@ void send_data ()
 
 /**
 	*This method will be used to constantly obtain the position of the engine to check if it reads it correctly.
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 void get_position () 
 {
@@ -90,7 +90,7 @@ void get_position ()
 
 /**
 	*This method will be used as a main and will call all the functions and manage the motor of the "client".
-	*	@author ROC BENAIGES MORAGREGA
+	 
 */	
 void motorClient(void)
 {
