@@ -1,7 +1,5 @@
 Semestral Work – MOTOR CONTROL
 
-AUTHOR:
-Roc Benaiges Moragrega
 
 ABSTRACT:
 The goal of the semestral work is to create a digital motor controller. The program control the position of the motor according to the set-point given by the position of another motor, moved by hand (steer-by-wire). The set-point will be transferred between the two motor controllers using UDP messages. The actual state of the controller and its history will be published as live graphs over the HTTP protocol.
