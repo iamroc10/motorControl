@@ -1,7 +1,7 @@
 /**
 *	@file server.c
 *	@brief This file represents the server, i.e. the motor that must receive the position of the motor of the client and move to the position received. 
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 
 
@@ -53,7 +53,7 @@ int pointerBuf;
 
 /**
 *	This method creates the simple web server and generates the graphs
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 void www(void)
 {
@@ -213,7 +213,7 @@ void www(void)
 
 /**
 *	This method creates the connection, creating a UDP socket, configuring the adress
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 void init_connectionServer() {
 	/* Create a UDP socket */
@@ -236,7 +236,7 @@ void init_connectionServer() {
 
 /**
 *	This method receives the position of the engine from the client constantly.
-*	@author ROC BENAIGES MORAGREGA
+*	
 */
 void recv_position () {
 	while(1) {
@@ -250,7 +250,7 @@ void recv_position () {
 /**
  	 *	This method moves the motor in order to the position of the motor and the received position of the other engine are the same. 
  	 *	We have the K constant which is the responsible to the quality of regulation (no oscillations, fast response, minimal steady state error, ...)
- 	 *	@author ROC BENAIGES MORAGREGA
+ 	 *	
 */
 void set_position () {
 	while(1) {
@@ -295,7 +295,7 @@ void set_position () {
 
 /**
  	 *	This method stores in a buffer all the data of position of the motor and the received position in order to use them then in the web server.
- 	 *	@author ROC BENAIGES MORAGREGA
+ 	 *	
 */
 void buffer(void) {
 	pointerBuf = 0;
@@ -314,7 +314,7 @@ void buffer(void) {
 
 /**
 	*This method will be used as a main and will create the tasks and call all the functions and it will manage the motor of the "server" and then delate all the tasks.
-	*	@author ROC BENAIGES MORAGREGA
+	*	
 */
 void motor()
 {
